@@ -1,0 +1,192 @@
+------------------------------------------------------------
+Creo Simulate Structure Version P-20-54:spg
+Summary for Design Study "Static_CapBack"
+Sun Dec 14, 2014   12:21:05
+------------------------------------------------------------
+
+Run Settings
+   Memory allocation for block solver: 512.0     
+
+Parallel Processing Status
+   Parallel task limit for current run:            8
+   Parallel task limit for current platform:      64
+   Number of processors detected automatically:    8
+
+Checking the model before creating elements...
+These checks take into account the fact that AutoGEM will
+automatically create elements in volumes with material
+properties, on surfaces with shell properties, and on curves
+with beam section properties.
+   Generate elements automatically.
+Checking the model after creating elements...
+No errors were found in the model.
+Creo Simulate Structure Model Summary
+
+   Principal System of Units: millimeter Newton Second (mmNs)
+
+   Length:          mm
+   Force:           N
+   Time:            sec
+   Temperature:     C
+
+   Model Type: Three Dimensional
+
+   Points:                831
+   Edges:                4178
+   Faces:                6013
+
+   Springs:                 0
+   Masses:                  0
+   Beams:                   0
+   Shells:                  0
+   Solids:               2665
+
+   Elements:             2665
+
+------------------------------------------------------------
+
+Standard Design Study
+
+Static Analysis "Static_CapBack":
+
+   Convergence Method: Single-Pass Adaptive
+   Plotting Grid:      4
+
+   Convergence Loop Log:                         (12:21:06)
+
+   >> Pass  1 <<
+         Calculating Element Equations           (12:21:06)
+            Total Number of Equations:   45033
+            Maximum Edge Order:              3
+         Solving Equations                       (12:21:06)
+         Post-Processing Solution                (12:21:07)
+         Checking Convergence                    (12:21:07)
+         Resource Check                          (12:21:08)
+            Elapsed Time     (sec):       3.94
+            CPU Time         (sec):       3.57
+            Memory Usage      (kb):     990610
+            Wrk Dir Dsk Usage (kb):      52224
+
+   >> Pass  2 <<
+         Calculating Element Equations           (12:21:08)
+            Total Number of Equations:   73668
+            Maximum Edge Order:              6
+         Solving Equations                       (12:21:09)
+         Post-Processing Solution                (12:21:10)
+         Checking Convergence                    (12:21:11)
+         Calculating Disp and Stress Results     (12:21:11)
+
+         RMS Stress Error Estimates:
+
+         Load Set          Stress Error  % of Max Prin Str
+         ----------------  ------------  -----------------
+         LoadSet1           1.58e+00       2.1% of  7.66e+01
+
+         Resource Check                          (12:21:13)
+            Elapsed Time     (sec):       8.94
+            CPU Time         (sec):       9.36
+            Memory Usage      (kb):     990610
+            Wrk Dir Dsk Usage (kb):      98304
+
+   Total Mass of Model:  4.973678e-04
+
+   Total Cost of Model:  0.000000e+00
+
+   Mass Moments of Inertia about WCS Origin:
+
+     Ixx:  7.51478e-01
+     Ixy:  2.53555e-08  Iyy:  7.51942e-01
+     Ixz:  5.08929e-10  Iyz:  2.15391e-04  Izz:  1.47367e+00
+
+   Principal MMOI and Principal Axes Relative to WCS Origin:
+
+            Max Prin           Mid Prin           Min Prin
+           1.47367e+00        7.51941e-01        7.51478e-01
+
+   WCS X:  7.15175e-10        5.46854e-05        1.00000e+00
+   WCS Y:  2.98436e-04        1.00000e+00       -5.46854e-05
+   WCS Z:  1.00000e+00       -2.98436e-04        1.56049e-08
+
+   Center of Mass Location Relative to WCS Origin:
+                  ( 1.15080e-07, -1.03582e-01,  4.52400e+00)
+
+   Mass Moments of Inertia about the Center of Mass:
+
+     Ixx:  7.41293e-01
+     Ixy:  2.53495e-08  Iyy:  7.41762e-01
+     Ixz:  7.67870e-10  Iyz: -1.76774e-05  Izz:  1.47367e+00
+
+   Principal MMOI and Principal Axes Relative to COM:
+
+            Max Prin           Mid Prin           Min Prin
+           1.47367e+00        7.41762e-01        7.41293e-01
+
+   WCS X:  1.04763e-09        5.40436e-05        1.00000e+00
+   WCS Y: -2.41526e-05        1.00000e+00       -5.40436e-05
+   WCS Z:  1.00000e+00        2.41526e-05       -2.35292e-09
+
+   Constraint Set: ConstraintSet1: CAP_BACK
+
+   Load Set: LoadSet1: CAP_BACK
+
+      Resultant Load on Model:
+         in global X direction: -4.212585e-11
+         in global Y direction:  3.043454e-12
+         in global Z direction:  7.180462e+03
+
+      Measures:
+
+      max_beam_bending:   0.000000e+00
+      max_beam_tensile:   0.000000e+00
+      max_beam_torsion:   0.000000e+00
+      max_beam_total:     0.000000e+00
+      max_disp_mag:       2.753823e-02
+      max_disp_x:         3.287881e-03
+      max_disp_y:         3.355448e-03
+      max_disp_z:         2.753694e-02
+      max_prin_mag*:      7.664056e+01
+      max_rot_mag:        0.000000e+00
+      max_rot_x:          0.000000e+00
+      max_rot_y:          0.000000e+00
+      max_rot_z:          0.000000e+00
+      max_stress_prin*:   7.664056e+01
+      max_stress_vm*:     5.298147e+01
+      max_stress_xx*:     5.170591e+01
+      max_stress_xy*:    -1.005000e+01
+      max_stress_xz*:     2.869339e+01
+      max_stress_yy*:     3.106259e+01
+      max_stress_yz*:    -1.192936e+01
+      max_stress_zz*:     4.340233e+01
+      min_stress_prin*:  -2.724089e+01
+      strain_energy:      3.199560e+01
+
+   ** Warning: The measures marked by an asterisk (*) were evaluated 
+   at (or close to) results singularities. The values of these  
+   measures may be inaccurate, and you must use engineering judgment 
+   when interpreting them.
+
+Analysis "Static_CapBack" Completed  (12:21:13)
+
+------------------------------------------------------------
+
+Memory and Disk Usage:
+
+   Machine Type: Windows 7 64 Service Pack 1
+   RAM Allocation for Solver (megabytes): 512.0
+
+   Total Elapsed Time (seconds): 9.09      
+   Total CPU Time     (seconds): 9.41      
+   Maximum Memory Usage (kilobytes): 990610    
+   Working Directory Disk Usage (kilobytes): 98304     
+
+   Results Directory Size (kilobytes):
+   26290 .\Static_CapBack
+
+   Maximum Data Base Working File Sizes (kilobytes):
+   83968 .\Static_CapBack.tmp\kel1.bas
+   14336 .\Static_CapBack.tmp\oel1.bas
+
+------------------------------------------------------------
+Run Completed
+Sun Dec 14, 2014   12:21:13
+------------------------------------------------------------

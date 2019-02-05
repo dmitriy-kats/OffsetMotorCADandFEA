@@ -1,0 +1,23 @@
+#PID -1Id 97
+#ErrMsgStr
+A total of 2665 elements and 831 nodes were created.
+#ErrMsgEnd
+#PID 4196
+#ErrMsgId 89
+#ErrMsgStr
+Starting analysis Static_CapBack
+#ErrMsgEnd
+#ErrMsgId 90
+#ErrMsgStr
+Starting solution pass 1 - Static_CapBack
+#ErrMsgEnd
+#ErrMsgId 90
+#ErrMsgStr
+Starting solution pass 2 - Static_CapBack
+#ErrMsgEnd
+#ErrMsgId 95
+#ErrMsgId 91
+#ErrMsgStr
+Analysis Static_CapBack completed
+#ErrMsgEnd
+#ErrMsgId 92
